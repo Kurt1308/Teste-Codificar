@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Sistema de Chamados";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Sistema de Chamados</h1>
+
+    
+    <p class="lead">
+        Desafio Técnico Full Stack - Codificar
+    </p>
+
+    <hr />
+
+    <div class="mt-4">
+        <a asp-controller="Chamados"
+           asp-action="Index"
+           class="btn btn-primary btn-lg">
+            Visualizar Chamados
+        </a>
+
+        <a asp-controller="Chamados"
+           asp-action="Create"
+           class="btn btn-success btn-lg">
+            Novo Chamado
+        </a>
+    </div>
+    
+
+</div>
+
+<div class="row mt-5">
+
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Cadastro
+            </div>
+            <div class="card-body">
+                <p>
+                    Cadastre novos chamados com título,
+                    descrição, prioridade e responsável.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Distribuição Automática
+            </div>
+            <div class="card-body">
+                <p>
+                    Atribuição automática para o responsável
+                    com menor quantidade de chamados em aberto.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Acompanhamento
+            </div>
+            <div class="card-body">
+                <p>
+                    Visualize, edite e acompanhe o andamento
+                    dos chamados cadastrados.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
