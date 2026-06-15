@@ -162,7 +162,7 @@ Responsável pelas operações:
 ### Clonar o Repositório
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git clone <[URL_DO_REPOSITORIO](https://github.com/Kurt1308/Teste-Codificar.git)>
 ```
 
 Entrar na pasta do projeto:
