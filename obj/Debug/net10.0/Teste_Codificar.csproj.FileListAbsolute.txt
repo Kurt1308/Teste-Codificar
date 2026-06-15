@@ -428,3 +428,4 @@ C:\Users\USER\source\repos\Teste-Codificar\obj\Debug\net10.0\refint\Teste_Codifi
 C:\Users\USER\source\repos\Teste-Codificar\obj\Debug\net10.0\Teste_Codificar.pdb
 C:\Users\USER\source\repos\Teste-Codificar\obj\Debug\net10.0\Teste_Codificar.genruntimeconfig.cache
 C:\Users\USER\source\repos\Teste-Codificar\obj\Debug\net10.0\ref\Teste_Codificar.dll
+C:\Users\USER\source\repos\Teste-Codificar\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
