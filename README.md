@@ -192,7 +192,7 @@ dotnet run
 A aplicação estará disponível em:
 
 ```text
-[[https://localhost:xxxx](https://localhost:5062)]
+[[https://localhost:xxxx]https://localhost:7145;http://localhost:5062
 ```
 
 ---
