@@ -1,64 +1,135 @@
 @model Teste_Codificar.Models.Chamado
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar Chamado";
 }
 
-<h1>Edit</h1>
+<div class="d-flex justify-content-between align-items-center mb-4">
 
-<h4>Chamado</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+    <div>
+        <h1>Editar Chamado</h1>
+        <h5 class="text-muted">
+            Atualize as informações do chamado
+        </h5>
+    </div>
+
+    <a asp-action="Index" class="btn btn-secondary">
+        Voltar para Lista
+    </a>
+
+</div>
+
+<div class="card">
+
+    <div class="card-header">
+        <h4>Dados do Chamado</h4>
+    </div>
+
+    <div class="card-body">
+
         <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div asp-validation-summary="ModelOnly"
+                 class="alert alert-danger">
+            </div>
+
             <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="Titulo" class="control-label"></label>
+
+            <div class="mb-3">
+                <label asp-for="Titulo" class="form-label">
+                    Título
+                </label>
                 <input asp-for="Titulo" class="form-control" />
                 <span asp-validation-for="Titulo" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Descricao" class="control-label"></label>
-                <input asp-for="Descricao" class="form-control" />
+
+            <div class="mb-3">
+                <label asp-for="Descricao" class="form-label">
+                    Descrição
+                </label>
+                <textarea asp-for="Descricao"
+                          class="form-control"
+                          rows="4"></textarea>
                 <span asp-validation-for="Descricao" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Prioridade" class="control-label"></label>
-                <input asp-for="Prioridade" class="form-control" />
+
+            <div class="mb-3">
+                <label asp-for="Prioridade" class="form-label">
+                    Prioridade
+                </label>
+                <select asp-for="Prioridade" class="form-select">
+                    <option value="1">Baixa</option>
+                    <option value="2">Média</option>
+                    <option value="3">Alta</option>
+                </select>
                 <span asp-validation-for="Prioridade" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Status" class="control-label"></label>
-                <input asp-for="Status" class="form-control" />
+
+            <div class="mb-3">
+                <label asp-for="Status" class="form-label">
+                    Status
+                </label>
+                <select asp-for="Status" class="form-select">
+                    <option value="1">Aberto</option>
+                    <option value="2">Em Andamento</option>
+                    <option value="3">Resolvido</option>
+                    <option value="4">Fechado</option>
+                </select>
                 <span asp-validation-for="Status" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="ResponsavelId" class="control-label"></label>
-                <input asp-for="ResponsavelId" class="form-control" />
-                <span asp-validation-for="ResponsavelId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Responsavel" class="control-label"></label>
-                <input asp-for="Responsavel" class="form-control" />
-                <span asp-validation-for="Responsavel" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DataAbertura" class="control-label"></label>
-                <input asp-for="DataAbertura" class="form-control" />
-                <span asp-validation-for="DataAbertura" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+            <div class="mb-3">
+                <label asp-for="ResponsavelId" class="form-label">
+                    Responsável
+                </label>
+
+                <select asp-for="ResponsavelId"
+                        asp-items="ViewBag.Responsaveis"
+                        class="form-select">
+                    <option value="">
+                        Selecione um responsável
+                    </option>
+                </select>
+
+                <span asp-validation-for="ResponsavelId"
+                      class="text-danger">
+                </span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="DataAbertura" class="form-label">
+                    Data de Abertura
+                </label>
+
+                <input asp-for="DataAbertura"
+                       class="form-control" />
+
+                <span asp-validation-for="DataAbertura"
+                      class="text-danger">
+                </span>
+            </div>
+
+            <hr />
+
+            <button type="submit"
+                    class="btn btn-primary">
+                Salvar Alterações
+            </button>
+
+            <a asp-action="Details"
+               asp-route-id="@Model.Id"
+               class="btn btn-info text-white">
+                Detalhes
+            </a>
+
+        </form>
+
+    </div>
+
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
