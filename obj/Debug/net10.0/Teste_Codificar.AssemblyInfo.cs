@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Teste_Codificar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c28dfee65f380b1d39d1d3e1ba4b71cc076723a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86160ca8f525db03f30ea203b4cc494e17d88336")]
 [assembly: System.Reflection.AssemblyProductAttribute("Teste_Codificar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Teste_Codificar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -18,9 +18,10 @@ public class Chamado
 
     [Required(ErrorMessage = "Selecione uma prioridade.")]
     public Prioridade Prioridade { get; set; }
-
-    [Required(ErrorMessage = "Selecione um Responsável.")]
+   
     public StatusChamado Status { get; set; }
+
+    [Required(ErrorMessage = "Selecione um responsável.")]
     [Display(Name = "ID do Responsável")]
     public int ResponsavelId { get; set; }
 
