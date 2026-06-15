@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\source\\repos\\Teste_Codificar\\Teste_Codificar\\Teste_Codificar.csproj": {}
+    "C:\\Users\\USER\\source\\repos\\Teste-Codificar\\Teste_Codificar.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\source\\repos\\Teste_Codificar\\Teste_Codificar\\Teste_Codificar.csproj": {
+    "C:\\Users\\USER\\source\\repos\\Teste-Codificar\\Teste_Codificar.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\Teste_Codificar\\Teste_Codificar\\Teste_Codificar.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\Teste-Codificar\\Teste_Codificar.csproj",
         "projectName": "Teste_Codificar",
-        "projectPath": "C:\\Users\\USER\\source\\repos\\Teste_Codificar\\Teste_Codificar\\Teste_Codificar.csproj",
+        "projectPath": "C:\\Users\\USER\\source\\repos\\Teste-Codificar\\Teste_Codificar.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\source\\repos\\Teste_Codificar\\Teste_Codificar\\obj\\",
+        "outputPath": "C:\\Users\\USER\\source\\repos\\Teste-Codificar\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

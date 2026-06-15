@@ -1,0 +1,131 @@
+# Build folders
+
+bin/
+obj/
+
+# Visual Studio
+
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+
+.idea/
+
+# VS Code
+
+.vscode/
+
+# NuGet
+
+packages/
+*.nupkg
+*.snupkg
+
+# Logs
+
+*.log
+
+# Publish
+
+publish/
+PublishProfiles/
+
+# Entity Framework
+
+*.db-wal
+*.db-shm
+
+# SQLite Database
+
+*.db
+*.sqlite
+*.sqlite3
+
+# IIS Express
+
+iisexpress/
+
+# ASP.NET Scaffolding
+
+ScaffoldingReadMe.txt
+
+# Node
+
+node_modules/
+
+# npm
+
+npm-debug.log*
+
+# Yarn
+
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage
+
+coverage/
+*.coverage
+*.coveragexml
+
+# Test Results
+
+TestResults/
+
+# Resharper
+
+_ReSharper*/
+*.DotSettings.user
+
+# Azure
+
+*.PublishSettings
+
+# Windows
+
+Thumbs.db
+Desktop.ini
+
+# Mac
+
+.DS_Store
+
+# Temporary files
+
+*.tmp
+*.temp
+
+# JetBrains
+
+.idea/
+
+# Backup files
+
+*.bak
+*.backup
+
+# Environment files
+
+.env
+.env.*
+
+# Generated files
+
+Generated/
+
+# ASP.NET secrets
+
+secrets.json
+
+# Local database files
+
+app.db
+app.db-journal
+
+# Visual Studio Code workspace
+
+*.code-workspace
