@@ -1,18 +1,20 @@
 ﻿@{
-    ViewData["Title"] = "Sistema de Chamados";
+    ViewData["Title"] = "Início";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Sistema de Chamados</h1>
+<div class="p-5 mb-4 bg-light rounded-3 shadow-sm">
+    <div class="container-fluid py-5">
 
-    
-    <p class="lead">
-        Desafio Técnico Full Stack - Codificar
-    </p>
+        <h1 class="display-4 fw-bold">
+            Sistema de Chamados
+        </h1>
 
-    <hr />
+        <p class="col-md-8 fs-5">
+            Aplicação desenvolvida para gerenciamento de chamados,
+            permitindo cadastro, edição, acompanhamento e distribuição
+            automática de atendimentos entre os responsáveis.
+        </p>
 
-    <div class="mt-4">
         <a asp-controller="Chamados"
            asp-action="Index"
            class="btn btn-primary btn-lg">
@@ -24,55 +26,87 @@
            class="btn btn-success btn-lg">
             Novo Chamado
         </a>
+
     </div>
-    
+</div>
+
+<div class="row text-center">
+
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+
+            <div class="card-body">
+                <h3 class="card-title">
+                    Cadastro
+                </h3>
+
+                <p class="card-text">
+                    Criação de chamados com título,
+                    descrição, prioridade, status e responsável.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+
+            <div class="card-body">
+                <h3 class="card-title">
+                    Acompanhamento
+                </h3>
+
+                <p class="card-text">
+                    Consulte, edite e acompanhe a evolução
+                    dos chamados durante todo o atendimento.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+
+            <div class="card-body">
+                <h3 class="card-title">
+                    Deleção
+                </h3>
+
+                <p class="card-text">
+                    O sistema permite a deleção de chamados existentes.
+                </p>
+            </div>
+
+        </div>
+    </div>
 
 </div>
 
-<div class="row mt-5">
+<div class="card mt-4 shadow-sm">
 
-    
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-header">
-                Cadastro
-            </div>
-            <div class="card-body">
-                <p>
-                    Cadastre novos chamados com título,
-                    descrição, prioridade e responsável.
-                </p>
-            </div>
-        </div>
+    <div class="card-header">
+        <h4>Sobre o Projeto</h4>
     </div>
 
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-header">
-                Distribuição Automática
-            </div>
-            <div class="card-body">
-                <p>
-                    Atribuição automática para o responsável
-                    com menor quantidade de chamados em aberto.
-                </p>
-            </div>
-        </div>
-    </div>
+    <div class="card-body">
 
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-header">
-                Acompanhamento
-            </div>
-            <div class="card-body">
-                <p>
-                    Visualize, edite e acompanhe o andamento
-                    dos chamados cadastrados.
-                </p>
-            </div>
-        </div>
+        <p>
+            Este projeto foi desenvolvido como parte do
+            desafio técnico Full Stack da Codificar,
+            utilizando ASP.NET Core MVC, Entity Framework Core
+            e SQLite.
+        </p>
+
+        <ul>
+            <li>ASP.NET Core MVC</li>
+            <li>Entity Framework Core</li>
+            <li>SQLite</li>
+            <li>Bootstrap 5</li>
+            <li>Arquitetura em camadas</li>
+        </ul>
+
     </div>
-    
 
 </div>
